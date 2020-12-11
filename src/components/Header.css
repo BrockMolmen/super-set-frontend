@@ -1,0 +1,46 @@
+header {
+  background-color: #513891;
+  text-align: left;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  color: #CECDD2;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #9997a2;
+}
+
+header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  list-style-type: none;
+  padding: 0px 10px;
+}
+
+header .searchbar input {
+  height: 30px;
+  width: 50vw;
+  min-width: 300px;
+  background-color: #AEAAAF;
+  border: none;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+header .searchbar button {
+  border-radius: 5px;
+  background-color: #A9A8D2;
+  color: #fff;
+  height: 30px;
+  margin: 5px;
+}
+/*# sourceMappingURL=Header.css.map */

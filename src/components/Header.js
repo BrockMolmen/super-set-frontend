@@ -8,6 +8,10 @@ const Header = (props) => {
       <div className="logo">
         <Link to={'/'}>Home!</Link>
       </div>
+        <form className="searchbar" action="search" method="get">
+          <input type="text"/> 
+          <button>SEARCH</button>
+        </form>
       <div className="links">
         <ul>
           { props.currentUser ? 

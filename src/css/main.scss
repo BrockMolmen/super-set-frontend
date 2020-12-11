@@ -1,0 +1,20 @@
+// /* Color Theme Swatches in Hex */
+$dkrpurp :#513891;
+$ltpurp: #A9A8D2;
+$offwhite: #CECDD2;
+$grey: #AEAAAF;
+$drkgrey: #4A4A4C;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+
+
+
+body {
+  background-color: $offwhite;
+  font-family: 'Oswald', sans-serif;
+  font-style: italic;
+  color: $drkgrey;
+  text-align: center;
+}
