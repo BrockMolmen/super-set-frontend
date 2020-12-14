@@ -5,16 +5,14 @@ $offwhite: #CECDD2;
 $grey: #AEAAAF;
 $drkgrey: #4A4A4C;
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
 
 body {
   background-color: $offwhite;
-  font-family: 'Oswald', sans-serif;
-  font-style: italic;
+  font-family: 'Teko', sans-serif;
+  font-style: italic; 
+  font-weight: lighter;
   color: $drkgrey;
   text-align: center;
 }

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom'
 import './Header.scss'
 import gameSearchModel from '../models/gamesearch'
@@ -9,7 +9,7 @@ const Header = (props) => {
   const HandelChangeInput = (event) => {
     event.preventDefault()
     gameSearchModel.all(searchInput)
-      console.log(searchInput)
+      // console.log(searchInput)
       // setSearchInput( data.results)
     }
 
@@ -31,7 +31,8 @@ const Header = (props) => {
         <ul>
           { props.currentUser ? 
             <>
-              <li><Link to={'/profile'}>Profile</Link></li>
+
+              <li><Link to={'/profile'}>My Set</Link></li>
               <li><a href="/logout" onClick={ props.logout }>Log Out</a></li>
             </>
           :

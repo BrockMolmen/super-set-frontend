@@ -1,9 +1,16 @@
 import React from 'react'
+import GameCard from '../components/GameCard'
 
-const Search = () => {
+
+const Search = (props) => {
+ console.log()
+
   return (
     <div>
       <h1>SEARCH</h1>
+      {/* loop over search results to display a GameCard for each result that console === snes  //// 
+      resources=games - results{i}.platforms[0].name==="Super Nintedo" */}
+      <GameCard  />
     </div>
   )
 }
