@@ -5,12 +5,11 @@ import gameSearchModel from '../models/gamesearch'
 
 const Header = (props) => {
   const [searchInput, setSearchInput] = useState("")
+  const [searchResults, setSearchResults] = useState([])
 
   const HandelChangeInput = (event) => {
     event.preventDefault()
     gameSearchModel.all(searchInput)
-      // console.log(searchInput)
-      // setSearchInput( data.results)
     }
 
   return (
@@ -21,14 +20,14 @@ const Header = (props) => {
         <li><Link to={'/game/all'}>All Games</Link></li>
       </ul>
       </div>
-        <form className="searchbar" action="search" method="get">
+        <form className="searchbar">
           <input 
             type="text"
             value={searchInput}
             onChange={e => setSearchInput(e.target.value)}
             placeholder="Search for Games"
             /> 
-          <button onClick={HandelChangeInput}>SEARCH</button>
+          <LINK to="" onClick={HandelChangeInput}>SEARCH</button>
         </form>
       <div className="links">
         <ul>

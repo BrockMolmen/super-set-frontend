@@ -9,6 +9,7 @@ import Search from '../pages/Search'
 import Game from '../pages/Game'
 import AllGames from '../pages/AllGames'
 
+
 const PrivateRoute = ({ component: Component, ...rest }) => {
   const currentUser = localStorage.getItem('id')
   return  <Route { ...rest } render={ props => {
