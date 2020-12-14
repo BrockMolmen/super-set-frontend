@@ -16,7 +16,10 @@ const Header = (props) => {
   return (
     <header>
       <div className="logo">
-        <Link to={'/'}>Home!</Link>
+      <ul>
+        <li><Link to={'/'}>Home!</Link></li>
+        <li><Link to={'/game/all'}>All Games</Link></li>
+      </ul>
       </div>
         <form className="searchbar" action="search" method="get">
           <input 

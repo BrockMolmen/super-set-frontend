@@ -32,6 +32,10 @@ const Profile = (props) => {
     <div>
       {/* <Link className="teasLink editUserLink" to={`/user/${userId}`}>Edit Your Info</Link> */}
       <h1>Hello { props.currentUser }</h1>
+      <p>username</p>
+      <p>set total</p>
+      <p>number of games</p>
+      <p>list of set</p>
       {/* { userBenefits.length ?
         <Container fluid>
           <Row>

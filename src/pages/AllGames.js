@@ -1,5 +1,6 @@
 import React from 'react'
-import GameCard from '../components/GameCard'
+import { useEffect } from "react"
+// import GameCard from '../components/GameCard'
 
 import useGames from "../hooks/useGames"
 
@@ -12,13 +13,17 @@ const AllGames = () => {
     // <div>
     //   <GameCard game={game} key={index} />
     // </div>
-    ))
-  }
+    // ))
+    ))}
+
+    useEffect(() => {
+      getGames()
+    }, [])
 
   return (
     <div>
       <h1>AllGames</h1>
-      {getGames()}
+      {/* {getGames()} */}
     </div>
   )
 }
