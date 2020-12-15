@@ -1,5 +1,5 @@
 // /* Color Theme Swatches in Hex */
-$dkrpurp :#513891;
+$drkpurp :#513891;
 $ltpurp: #A9A8D2;
 $offwhite: #CECDD2;
 $grey: #AEAAAF;
@@ -9,19 +9,22 @@ $drkgrey: #4A4A4C;
 
 
 body {
-  background-color: $offwhite;
+  display: flex;
+  background-color: $drkgrey;
   font-family: 'Teko', sans-serif;
   font-style: italic; 
   font-weight: lighter;
-  color: $drkgrey;
+  color: $offwhite;
   text-align: center;
 }
 
 //GameCard
 #game-card{
-  border: 2px solid $drkgrey;
+  border-top: 2px dotted $ltpurp;
+  background-color: $drkpurp;
   display: flex;
   justify-content: center;
+  width: 600px
 }
 
 #game-img {

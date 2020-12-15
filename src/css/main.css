@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
 body {
-  background-color: #CECDD2;
+  display: flex;
+  background-color: #4A4A4C;
   font-family: 'Teko', sans-serif;
   font-style: italic;
   font-weight: lighter;
-  color: #4A4A4C;
+  color: #CECDD2;
   text-align: center;
+  justify-content: center;
 }
 
 #game-card {
-  border: 2px solid #4A4A4C;
+  border-top: 2px dotted #A9A8D2;
+  background-color: #513891;
   display: flex;
   justify-content: center;
+  width: 600px;
 }
 
 #game-img {

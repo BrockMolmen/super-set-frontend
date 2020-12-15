@@ -1,5 +1,7 @@
 import React from 'react'
 import {useHistory} from "react-router-dom"
+import gameModel from '../models/game'
+import {Card} from 'reactstrap'
 
 const GameCard = (props) => {
   let history = useHistory()
@@ -7,11 +9,11 @@ const GameCard = (props) => {
 
   const addToSet = () => {
     const userId = localStorage.getItem('id')
-    console.log(props.game.name, userId)
+    gameModel.create(props.game.name, userId).then(data => history.push('/profile'))
   }
 
   return (
-    <div id="game-card">
+    <Card id="game-card">
       <div>
         <img id="game-img" src={props.game.image.super_url} />
       </div>
@@ -23,7 +25,7 @@ const GameCard = (props) => {
 
         <button onClick={addToSet}>ADD TO SUPER SET</button>
       </div>
-    </div>
+    </Card>
   )
 }
 

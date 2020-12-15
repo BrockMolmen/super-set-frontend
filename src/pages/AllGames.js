@@ -1,13 +1,14 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import {useHistory} from "react-router-dom"
 import GameCard from '../components/GameCard'
-import gameModel from '../models/game'
+
 import useGames from '../hooks/useGames'
 
 const AllGames = () => {
   const [games, fetchGames] = useGames('')
-  const [offset, setOffset] = useState('100')
+  
+  // const [offset, setOffset] = useState('100')
+
   // const [allGames, setAllGames] = useState([])
 
   const makeList = () => {
@@ -22,6 +23,7 @@ const AllGames = () => {
   //   .then(res => fetchGames(res.json()))
   //   .then(offset => offset + 100)
   // }
+
 
 
   return (

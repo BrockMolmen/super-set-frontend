@@ -8,10 +8,8 @@ const useGames = () => {
     allGameModel.all().then(data => {
       // console.log("here",data)
       setGames( data.results )
-
     })
   }
-
   useEffect(() => {
     fetchGames();
   }, [])
