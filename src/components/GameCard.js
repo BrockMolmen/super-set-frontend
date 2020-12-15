@@ -1,7 +1,14 @@
 import React from 'react'
+import {useHistory} from "react-router-dom"
 
 const GameCard = (props) => {
+  let history = useHistory()
 
+
+  const addToSet = () => {
+    const userId = localStorage.getItem('id')
+    console.log(props.game.name, userId)
+  }
 
   return (
     <div id="game-card">
@@ -14,7 +21,7 @@ const GameCard = (props) => {
         <h4>overview</h4>
         <p> {props.game.deck} </p>
 
-        <p>Add to set</p>
+        <button onClick={addToSet}>ADD TO SUPER SET</button>
       </div>
     </div>
   )
