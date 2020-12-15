@@ -1,9 +1,10 @@
 const url = `http://localhost:4000/api/v1/game`
 
 
-class allGameModel {
+class gameModel {
   static all = () => {
     return fetch(`${url}/all`)
+    .then(res => res.json())
   }
 }
-export default allGameModel
+export default gameModel

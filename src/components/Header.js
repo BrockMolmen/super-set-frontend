@@ -5,7 +5,7 @@ import gameSearchModel from '../models/gamesearch'
 
 const Header = (props) => {
   const [searchInput, setSearchInput] = useState("")
-  const [searchResults, setSearchResults] = useState([])
+  // const [searchResults, setSearchResults] = useState([])
 
   const HandelChangeInput = (event) => {
     event.preventDefault()
@@ -27,7 +27,7 @@ const Header = (props) => {
             onChange={e => setSearchInput(e.target.value)}
             placeholder="Search for Games"
             /> 
-          <LINK to="" onClick={HandelChangeInput}>SEARCH</button>
+          <Link to="/game/search" onClick={HandelChangeInput} > SEARCH </Link>
         </form>
       <div className="links">
         <ul>

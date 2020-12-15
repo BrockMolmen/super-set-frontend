@@ -1,29 +1,29 @@
 import React from 'react'
-import { useEffect } from "react"
-// import GameCard from '../components/GameCard'
-
-import useGames from "../hooks/useGames"
+import { useEffect, useState } from 'react'
+import GameCard from '../components/GameCard'
+import gameModel from '../models/game'
+import useGames from '../hooks/useGames'
 
 const AllGames = () => {
-  const [games] = useGames('')
+  const [games, fetchGames] = useGames('')
+  const [offset, setOffset] = useState('100')
+  // const [allGames, setAllGames] = useState([])
 
-  const getGames = () => {
+  const makeList = () => {
     return games.map((game, index) => (
-      console.log(game)
-    // <div>
-    //   <GameCard game={game} key={index} />
-    // </div>
-    // ))
-    ))}
+      
+        <GameCard game={game} key={index} />
+  
+    ))
+  }
 
-    useEffect(() => {
-      getGames()
-    }, [])
+
+
 
   return (
     <div>
       <h1>AllGames</h1>
-      {/* {getGames()} */}
+      {games ? makeList() : "loading..."}  
     </div>
   )
 }

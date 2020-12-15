@@ -16,3 +16,21 @@ body {
   color: $drkgrey;
   text-align: center;
 }
+
+//GameCard
+#game-card{
+  border: 2px solid $drkgrey;
+  display: flex;
+  justify-content: center;
+}
+
+#game-img {
+  max-height: 200px;
+  max-width: 150px;
+  margin: 20px;
+}
+
+#game-info {
+  width: 600px;
+  text-align: left;
+}

@@ -21,9 +21,9 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
 const Routes = (props) => (
   <Switch>
     <Route exact path='/' component={ Home } />
-    <Route path='/search' component={ Search } />
+    <Route eact path='/game/search' component={ Search } />
+    <Route exact path='/game' component={ Game } />
     <Route exact path='/game/all' component={ AllGames } />
-    <Route path='/game' component={ Game } />
     <Route path='/register' component={ Register } />
     <Route path='/login' render={ (routeComponentProps) => {
       return  <Login 

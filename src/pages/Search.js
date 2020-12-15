@@ -3,7 +3,7 @@ import GameCard from '../components/GameCard'
 
 
 const Search = (props) => {
- console.log()
+ console.log(props)
 
   return (
     <div>

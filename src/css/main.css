@@ -7,4 +7,21 @@ body {
   color: #4A4A4C;
   text-align: center;
 }
+
+#game-card {
+  border: 2px solid #4A4A4C;
+  display: flex;
+  justify-content: center;
+}
+
+#game-img {
+  max-height: 200px;
+  max-width: 150px;
+  margin: 20px;
+}
+
+#game-info {
+  width: 600px;
+  text-align: left;
+}
 /*# sourceMappingURL=main.css.map */
