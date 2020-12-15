@@ -8,14 +8,14 @@ class gameModel {
     .then(res => res.json())
   }
 
-  static create = (gameData, userId) => {
-    console.log(gameData, userId)
+  static create = (name, guid, userId) => {
+    console.log(name, guid, userId)
     return fetch(`${url}/all`, {
       method: "POST",
       headers: {
         "content-Type": "application/json"
       },
-      body: JSON.stringify({gameData, userId})
+      body: JSON.stringify({name, guid, userId})
     })
     .then(res => res.json())
   }

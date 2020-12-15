@@ -9,7 +9,7 @@ const GameCard = (props) => {
 
   const addToSet = () => {
     const userId = localStorage.getItem('id')
-    gameModel.create(props.game.name, userId).then(data => history.push('/profile'))
+    gameModel.create(props.game.name, props.game.guid, userId).then(data => history.push('/profile'))
   }
 
   return (
