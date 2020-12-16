@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import './Header.scss'
 import gameSearchModel from '../models/gamesearch'
 
+const userId = localStorage.getItem('id')
+
 const Header = (props) => {
   const [searchInput, setSearchInput] = useState("")
   // const [searchResults, setSearchResults] = useState([])
@@ -34,7 +36,7 @@ const Header = (props) => {
           { props.currentUser ? 
             <>
 
-              <li><Link to={'/profile'}>My Set</Link></li>
+              <li><Link to={`/profile`}>My Set</Link></li>
               <li><a href="/logout" onClick={ props.logout }>Log Out</a></li>
             </>
           :

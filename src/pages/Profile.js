@@ -1,23 +1,25 @@
-import React from 'react' // { useState, useEffect } 
+import React, { useState, useEffect }  from 'react'
 // import {Link} from 'react-router-dom'
 
-// import UserModel from "../models/user"
+import UserModel from "../models/user"
+const userId = localStorage.getItem('id')
 
 const Profile = (props) => {
   // const [userBenefits, setUserBenefits] = useState([])
-  // const [userInfo, setUserInfo] = useState(null)
-  // const [userId, setUserId] = useState(null)
+  const [userInfo, setUserInfo] = useState(null)
 
-  // const fetchUserData = () => {
-  //   UserModel.all().then(data => {
-  //     setUserInfo(data.userBenefits[0].firstName)
-  //     setUserId(data.userBenefits[0].id)
-  //   })
-  // }
 
-  // useEffect(() => {
-  //   fetchUserData()
-  // }, [])
+  const fetchUserData = () => {
+    UserModel.show().then(userData => {
+      setUserInfo(userData.user.username)
+      console.log(userData.user.username)
+    })
+  }
+
+  useEffect(() => {
+    fetchUserData()
+    
+  }, [])
 
   // const generatedUserBenList = () => {
   //   return userBenefits.map((userBenefit, index) => (
@@ -30,12 +32,9 @@ const Profile = (props) => {
   
   return (
     <div>
+    <h1> hello {userInfo}  </h1>
       {/* <Link className="teasLink editUserLink" to={`/user/${userId}`}>Edit Your Info</Link> */}
-      <h1>Hello { props.currentUser }</h1>
-      <p>username</p>
-      <p>set total</p>
-      <p>number of games</p>
-      <p>list of set</p>
+
       {/* { userBenefits.length ?
         <Container fluid>
           <Row>
