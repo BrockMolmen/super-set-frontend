@@ -1,9 +1,10 @@
 header {
-  background-color: #513891;
+  width: 100vw;
+  background-color: rgba(80, 56, 143, 0.8);
   text-align: left;
   padding: 20px 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 2em;
 }
 

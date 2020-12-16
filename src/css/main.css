@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
 body {
+  background-image: url(kamil-s-NPP4Z-3dJe8-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   background-color: #4A4A4C;
   font-family: 'Teko', sans-serif;
@@ -7,13 +10,37 @@ body {
   font-weight: lighter;
   color: #CECDD2;
   text-align: center;
-  justify-content: center;
+}
+
+.auth {
+  max-width: 400px;
+  background-color: #A9A8D2;
+  margin-top: 40px;
+  color: #4A4A4C;
+}
+
+.auth-input {
+  background-color: rgba(37, 37, 37, 0.5);
+}
+
+.auth-input:active {
+  background-color: rgba(37, 37, 37, 0.7);
+}
+
+.auth-input:hover {
+  background-color: #4A4A4C;
+}
+
+.gamecard {
+  display: flex;
+  justify-content: space-around;
 }
 
 #game-card {
-  border-top: 2px dotted #A9A8D2;
-  background-color: #513891;
+  border-top: 2px solid #A9A8D2;
+  background-color: rgba(81, 56, 145, 0.9);
   display: flex;
+  flex-direction: row;
   justify-content: center;
   width: 600px;
 }

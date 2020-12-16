@@ -24,12 +24,13 @@ const AllGames = () => {
 
 
   return (
-    <div>
-      <h1>ALL SNES GAMES</h1>
-      {games ? makeList() : "loading..."}  
-      {/* <a onClick={loadMore}>LOAD MORE</a> */}
+    <div className="gamecard">
+      <div>
+        <h1>ALL SNES GAMES</h1>
+        {games ? makeList() : "loading..."}  
+        {/* <a onClick={loadMore}>LOAD MORE</a> */}
+      </div>
     </div>
-
   )
 }
 
