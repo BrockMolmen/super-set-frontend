@@ -1,9 +1,9 @@
 import React, { useState, useEffect }  from 'react'
 import gameModel from '../models/game'
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import SetCard from '../components/SetCard'
 import UserModel from "../models/user"
-
+const userId = localStorage.getItem('id')
 
 const Profile = (props) => {
   const [userGames, setUserGames] = useState([])
@@ -46,7 +46,8 @@ const Profile = (props) => {
   
   return (
     <div>
-    <h1> hello {userInfo}  </h1>
+    <h1> HELLO {userInfo}  </h1>
+    <Link className="edit-link editUserLink" to={`/user/${userId}`}>Edit Your Info</Link>
       {userGames ? mapUserGames() : "loading..."}
     </div>
   )

@@ -4,31 +4,32 @@ import supersetModel from '../models/superset'
 import {Card} from 'reactstrap'
 
 const GameCard = (props) => {
-  const [gameDetail, setGameDetail] = useState([])
-  console.log(props)
+  const [gameDetail, setGameDetail] = useState(null)
+
 
   const getDetails = () => {
     supersetModel.findSet(props.game.guid)
-    // .then(data => {
-    //   setGameDetail( data.results )
+    .then(data => {
+      console.log(data)
+      setGameDetail( data )
     }
-    // )
-  // }
-
+    )
+  }
+  
   useEffect(() => {
     getDetails()
   }, [])
-
+ 
   return (
     <Card id="game-card">
       <div>
-        {/* <img id="game-img" src={props.game.image.super_url} /> */}
+      {gameDetail ? <img id="game-img" src={gameDetail.image.super_url} /> : "no image"} 
       </div>
       <div id="game-info">
         <h2>{props.game.name}</h2>
-        {/* <p>Release Date : {props.game.original_release_date}</p> */}
+        {gameDetail ? <p id="release-date"> {gameDetail.original_release_date}  </p> : "..."}
         <h4>overview</h4>
-        {/* <p> {props.game.deck} </p> */}
+        {gameDetail ? <p id="release-date"> {gameDetail.deck}  </p> : "..."}
       </div>
     </Card>
   )

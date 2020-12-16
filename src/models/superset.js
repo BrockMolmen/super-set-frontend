@@ -6,7 +6,8 @@ class supersetModel {
 
   static findSet = (guid) => {
     console.log(guid)
-    return fetch(`${url}`)
+    return fetch(`${url}/${guid}`)
+    .then(res => res.json())
   }
 
 }

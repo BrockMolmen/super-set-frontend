@@ -8,7 +8,7 @@ import Profile from '../pages/Profile'
 import Search from '../pages/Search'
 import Game from '../pages/Game'
 import AllGames from '../pages/AllGames'
-
+import User from "../pages/User"
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
   const currentUser = localStorage.getItem('id')
@@ -24,6 +24,7 @@ const Routes = (props) => (
     <Route eact path='/game/search' component={ Search } />
     <Route exact path='/game' component={ Game } />
     <Route exact path='/game/all' component={ AllGames } />
+    <Route path = "/user/:id" component = { User } />
     <Route path='/register' component={ Register } />
     <Route path='/login' render={ (routeComponentProps) => {
       return  <Login 
@@ -33,7 +34,6 @@ const Routes = (props) => (
                 storeUser={ props.storeUser }
               />
     } } />
-    
     <PrivateRoute path='/profile' component={ Profile } currentUser={ props.currentUser } />
   </Switch>
 )

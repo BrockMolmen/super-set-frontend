@@ -6,7 +6,6 @@ const useGames = () => {
 
   const fetchGames = () => {
     allGameModel.all().then(data => {
-      // console.log("here",data)
       setGames( data.results )
     })
   }
