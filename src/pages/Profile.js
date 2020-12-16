@@ -31,17 +31,10 @@ const Profile = (props) => {
 
   const mapUserGames = () => {
     return userGames.map((game, index) => (
-      // console.log(games)
       <SetCard game={game} key={game.guid} />
     ))
   }
-  // const generatedUserBenList = () => {
-  //   return userBenefits.map((userBenefit, index) => (
-  //     <Col xs={4} key={userBenefit.id} >
-  //       <UserBenefitCard userBenefit={userBenefit} key={userBenefit.id} />
-  //     </Col>
-  //   ))
-  // }
+
   
   
   return (
