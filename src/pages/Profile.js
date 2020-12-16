@@ -1,11 +1,12 @@
 import React, { useState, useEffect }  from 'react'
+import gameModel from '../models/game'
 // import {Link} from 'react-router-dom'
-
+import SetCard from '../components/SetCard'
 import UserModel from "../models/user"
-const userId = localStorage.getItem('id')
+
 
 const Profile = (props) => {
-  // const [userBenefits, setUserBenefits] = useState([])
+  const [userGames, setUserGames] = useState([])
   const [userInfo, setUserInfo] = useState(null)
 
 
@@ -17,10 +18,23 @@ const Profile = (props) => {
   }
 
   useEffect(() => {
+    getUserSet()
     fetchUserData()
-    
   }, [])
 
+
+  const getUserSet = () => {
+    gameModel.find().then((games, index) => {
+      setUserGames(games)
+    })
+  }
+
+  const mapUserGames = () => {
+    return userGames.map((game, index) => (
+      // console.log(games)
+      <SetCard game={game} key={game.guid} />
+    ))
+  }
   // const generatedUserBenList = () => {
   //   return userBenefits.map((userBenefit, index) => (
   //     <Col xs={4} key={userBenefit.id} >
@@ -33,17 +47,7 @@ const Profile = (props) => {
   return (
     <div>
     <h1> hello {userInfo}  </h1>
-      {/* <Link className="teasLink editUserLink" to={`/user/${userId}`}>Edit Your Info</Link> */}
-
-      {/* { userBenefits.length ?
-        <Container fluid>
-          <Row>
-            {
-              generatedUserBenList()
-            }
-          </Row>
-        </Container>
-        : "No benefits saved"} */}
+      {userGames ? mapUserGames() : "loading..."}
     </div>
   )
 }

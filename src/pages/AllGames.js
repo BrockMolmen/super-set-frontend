@@ -6,10 +6,7 @@ import useGames from '../hooks/useGames'
 
 const AllGames = () => {
   const [games, fetchGames] = useGames('')
-  
-  // const [offset, setOffset] = useState('100')
 
-  // const [allGames, setAllGames] = useState([])
 
   const makeList = () => {
     return games.map((game, index) => (
