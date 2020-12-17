@@ -34,6 +34,7 @@ For Soul Sip'n we used many different technologies.
 - As a visitor, i want to be able to search for a game
 - As a logged-in user, I want to the total worth of my set
 - As a logged-in user, I want to the current price of each game in my set
+- Add responsive Nav Bar
 - console-style landing page w/ react spring
 
 ## Special Thanks To...
