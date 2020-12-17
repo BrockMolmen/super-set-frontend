@@ -24,7 +24,7 @@ const AllGames = () => {
 
 
   return (
-    <div className="gamecard">
+    <div className="center-stage">
       <div>
         <h1>ALL SNES GAMES</h1>
         {games ? makeList() : "loading..."}  

@@ -15,7 +15,7 @@ const Header = (props) => {
     }
 
   return (
-    <header>
+    <header className="snes-it">
       <div className="logo">
       <ul>
         <li><Link to={'/game/all'}>SNES</Link></li>
@@ -26,7 +26,7 @@ const Header = (props) => {
             type="text"
             value={searchInput}
             onChange={e => setSearchInput(e.target.value)}
-            placeholder="Search for Games"
+            placeholder="Search for Games - Coming Soon"
             /> 
           <Link to="/game/search" onClick={HandelChangeInput} > SEARCH </Link>
         </form>

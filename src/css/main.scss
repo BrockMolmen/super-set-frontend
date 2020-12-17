@@ -15,55 +15,91 @@ body {
   background-attachment: fixed;
   display: flex;
   background-color: $drkgrey;
-  font-family: 'Teko', sans-serif;
-  font-style: italic; 
+  font-family: 'Teko', sans-serif; 
   font-weight: lighter;
   color: $offwhite;
   text-align: center;
 }
-//Footer
 
 
-//Login/Register
+//global
+.center-stage {
+  display: flex;
+  justify-content: space-around;
+}
+
+.snes-it{
+  font-style: italic;
+}
+
+//Login
 .auth {
-  max-width: 400px;
-  background-color: $ltpurp;
+  width: 300px;
+  background-color: rgba(81, 56, 145,.9);
   margin-top: 40px;
-  color:$drkgrey
+  color: $offwhite;
+  border-radius: 5px;
 }
 .auth-input {
-  background-color: rgba(37, 37, 37, 0.5);
+  width: 90%;
+  color: $offwhite;
+  border-radius: 6px;
+  background-color: rgba(37, 37, 37, 0.7);
   &:active {
-    background-color: rgba(37, 37, 37, 0.7);
+    background-color: rgba(56, 56, 56, 0.7);
   }
   &:hover {
-    background-color: $drkgrey;
+    background-color: rgba(24, 24, 24, 0.7);
   }
 }
-.gamecard {
-  display: flex;
 
-  justify-content: space-around;
-
+.gbl-button { 
+  background-color: $ltpurp;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Teko', sans-serif;
+  color: $drkgrey;
+  font-size: 1em;
+  margin: 7px;
+  float: right;
 }
 //GameCard
-#game-card{
+.game-card{
   border-top: 2px solid $ltpurp;
   background-color: rgba(81, 56, 145,.9);
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 600px;
-
+  margin: 10px;
+  border-radius: 8px;
 }
 
-#game-img {
-  max-height: 200px;
+.game-img {
+  max-height: 150px;
   max-width: 150px;
   margin: 20px;
 }
 
-#game-info {
+.game-name {
+  margin: 0px;
+  margin-top: 8px;
+}
+.game-date {
+  margin: 0px;
+  margin-top: -10px;
+}
+
+.game-lable {
+  margin: 0px;
+}
+
+.game-deck {
+  margin: 0px;
+  margin-top: -20px;
+}
+
+.game-info {
   width: 600px;
   text-align: left;
 }

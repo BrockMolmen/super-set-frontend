@@ -13,17 +13,17 @@ const GameCard = (props) => {
   }
 
   return (
-    <Card id="game-card">
+    <Card className="game-card">
       <div>
-        <img id="game-img" src={props.game.image.super_url} />
+        <img className="game-img" src={props.game.image.super_url} />
       </div>
-      <div id="game-info">
-        <h2>{props.game.name}</h2>
-        <p>Release Date : {props.game.original_release_date}</p>
-        <h4>overview</h4>
+      <div className="game-info">
+        <h2 className="game-name">{props.game.name}</h2>
+        <p className="game-date">Release Date : {props.game.original_release_date}</p>
+        <h3>overview</h3>
         <p> {props.game.deck} </p>
 
-        <button onClick={addToSet}>ADD TO SUPER SET</button>
+        <button className="gbl-button" onClick={addToSet}>ADD TO SUPER SET</button>
       </div>
     </Card>
   )

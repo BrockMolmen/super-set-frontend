@@ -36,8 +36,9 @@ const Login = props => {
   if (props.currentUser) return <Redirect to='/profile' />
 
   return (
+    <div className="center-stage">
       <form className="auth" onSubmit={ handleSubmit }>
-        <h4>Login</h4>
+        <h2 className="auth-header">LOGIN</h2>
         <div className="form-group">
           <label htmlFor="name">Email</label>
           <input className="auth-input"
@@ -62,8 +63,9 @@ const Login = props => {
           />
         
         </div>
-        <button type="submit">Login</button>
+        <button className="gbl-button" type="submit">Login</button>
       </form>
+      </div>
     
   )
 }

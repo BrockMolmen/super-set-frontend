@@ -29,16 +29,16 @@ const SetCard = (props) => {
 
 
   return (
-    <Card id="game-card">
+    <Card className="game-card">
       <div>
-      {gameDetail ? <img id="game-img" src={gameDetail.image.super_url} /> : "no image"} 
+      {gameDetail ? <img className="game-img" src={gameDetail.image.super_url} /> : "no image"} 
       </div>
-      <div id="game-info">
-        <h2>{props.game.name}</h2>
-        {gameDetail ? <p id="release-date"> {gameDetail.original_release_date}  </p> : "..."}
-        <h4>overview</h4>
-        {gameDetail ? <p id="release-date"> {gameDetail.deck}  </p> : "..."}
-        <button onClick={deleteGame}>REMOVE FROM SET</button>
+      <div className="game-info">
+        <h2 className="game-name">{props.game.name}</h2>
+        {gameDetail ? <p className="game-date"> {gameDetail.original_release_date}  </p> : "..."}
+        <h3 className="game-label">overview</h3>
+        {gameDetail ? <p className="game-deck"> {gameDetail.deck}  </p> : "..."}
+        <button className="gbl-button" onClick={deleteGame}>REMOVE FROM SET</button>
       </div>
     </Card>
   )

@@ -6,52 +6,91 @@ body {
   display: flex;
   background-color: #4A4A4C;
   font-family: 'Teko', sans-serif;
-  font-style: italic;
   font-weight: lighter;
   color: #CECDD2;
   text-align: center;
 }
 
-.auth {
-  max-width: 400px;
-  background-color: #A9A8D2;
-  margin-top: 40px;
-  color: #4A4A4C;
-}
-
-.auth-input {
-  background-color: rgba(37, 37, 37, 0.5);
-}
-
-.auth-input:active {
-  background-color: rgba(37, 37, 37, 0.7);
-}
-
-.auth-input:hover {
-  background-color: #4A4A4C;
-}
-
-.gamecard {
+.center-stage {
   display: flex;
   justify-content: space-around;
 }
 
-#game-card {
+.snes-it {
+  font-style: italic;
+}
+
+.auth {
+  width: 300px;
+  background-color: rgba(81, 56, 145, 0.9);
+  margin-top: 40px;
+  color: #CECDD2;
+  border-radius: 5px;
+}
+
+.auth-input {
+  width: 90%;
+  color: #CECDD2;
+  border-radius: 6px;
+  background-color: rgba(37, 37, 37, 0.7);
+}
+
+.auth-input:active {
+  background-color: rgba(56, 56, 56, 0.7);
+}
+
+.auth-input:hover {
+  background-color: rgba(24, 24, 24, 0.7);
+}
+
+.gbl-button {
+  background-color: #A9A8D2;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Teko', sans-serif;
+  color: #4A4A4C;
+  font-size: 1em;
+  margin: 7px;
+  float: right;
+}
+
+.game-card {
   border-top: 2px solid #A9A8D2;
   background-color: rgba(81, 56, 145, 0.9);
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 600px;
+  margin: 10px;
+  border-radius: 8px;
 }
 
-#game-img {
-  max-height: 200px;
+.game-img {
+  max-height: 150px;
   max-width: 150px;
   margin: 20px;
 }
 
-#game-info {
+.game-name {
+  margin: 0px;
+  margin-top: 8px;
+}
+
+.game-date {
+  margin: 0px;
+  margin-top: -10px;
+}
+
+.game-lable {
+  margin: 0px;
+}
+
+.game-deck {
+  margin: 0px;
+  margin-top: -20px;
+}
+
+.game-info {
   width: 600px;
   text-align: left;
 }

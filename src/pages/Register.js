@@ -34,12 +34,12 @@ const Register = props => {
   }
 
   return (
-    <div>
-      <h4>Register</h4>
-      <form onSubmit={ handleSubmit }>
+    <div className="center-stage">
+      <form className="auth" onSubmit={ handleSubmit }>
+      <h2 className="auth-header">Register</h2>
         <div className="form-group">
           <label htmlFor="name">Username</label>
-          <input 
+          <input className="auth-input"
             onChange={ handleUsername } 
             value={ username }
             type="text" 
@@ -50,7 +50,7 @@ const Register = props => {
         </div>
         <div className="form-group">
           <label htmlFor="name">Email</label>
-          <input 
+          <input className="auth-input"
             onChange={ handleEmail } 
             value={ email } 
             type="email" 
@@ -61,7 +61,7 @@ const Register = props => {
         </div>
         <div className="form-group">
           <label htmlFor="name">Password</label>
-          <input 
+          <input className="auth-input"
             onChange={ handlePassword } 
             value={ password } 
             type="password" 
@@ -72,7 +72,7 @@ const Register = props => {
         </div>
         <div className="form-group">
           <label htmlFor="confirm-password">Confirm Password</label>
-          <input 
+          <input className="auth-input"
             onChange={ handleConfirmPassword } 
             value={ confirmPassword } 
             type="password" 
@@ -81,9 +81,10 @@ const Register = props => {
             required
           />
         </div>
-        <button type="submit">Register</button>
+        <button className="gbl-button" type="submit">Register</button>
       </form>
     </div>
+    
   )
 }
 
