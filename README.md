@@ -7,7 +7,7 @@ Welcome to Super Set, the new home of you Super Nintendo (SNES) collection. The 
 - As a visitor, I want to browse games 
 - As a visitor, I want to see a games details and description
 - As a logged-in user, I want to add games I own to my "Super Set"
-- As a logged-in user, I want to remove game i no longer own
+- As a logged-in user, I want to remove game I no longer own
 - As a logged-in user, I want to be able to edit my username and email
 
 ## Wireframes
