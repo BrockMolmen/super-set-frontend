@@ -10,7 +10,6 @@ class supersetModel {
   }
 
   static delete = (props) => {
-    console.log(props)
     return fetch(`${url}/${userId}/${props.guid}`, {
       method: 'DELETE',
       headers: {

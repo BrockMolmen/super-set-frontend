@@ -28,7 +28,7 @@ const Header = (props) => {
             onChange={e => setSearchInput(e.target.value)}
             placeholder="Search for Games - Coming Soon"
             /> 
-          <Link to="/game/search" onClick={HandelChangeInput} > SEARCH </Link>
+          <Link to="/game/search" className="btn-search" onClick={HandelChangeInput} > SEARCH </Link>
         </form>
       <div className="links">
         <ul>

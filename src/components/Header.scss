@@ -1,4 +1,5 @@
 // /* Color Theme Swatches in Hex */
+$blkpurp :#21173a;
 $drkpurp :#513891;
 $ltpurp: #A9A8D2;
 $offwhite: #CECDD2;
@@ -14,6 +15,8 @@ header {
   display: flex;
   justify-content: space-around;
   font-size: 2em;
+  border-bottom: 4px solid $ltpurp ;
+  border-radius: 8px;
 
 
   a {

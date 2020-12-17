@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <h1>SUPER SET</h1>
-      {/* what can Home be about...pull a random game?  */}
+      {/* future place for SNES console login w/ modals */}
     </div>
   );
 }

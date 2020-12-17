@@ -10,7 +10,6 @@ const SetCard = (props) => {
   const getDetails = () => {
     supersetModel.findSet(props.game.guid)
     .then(data => {
-      console.log(data)
       setGameDetail( data )
     }
     )
@@ -23,7 +22,6 @@ const SetCard = (props) => {
   }, [])
  
   const deleteGame = () => {
-    // console.log(props.game)
     supersetModel.delete(props.game).then(window.location.reload())
   }
 

@@ -6,6 +6,8 @@ header {
   display: flex;
   justify-content: space-around;
   font-size: 2em;
+  border-bottom: 4px solid #A9A8D2;
+  border-radius: 8px;
 }
 
 header a {

@@ -20,6 +20,11 @@ body {
   font-style: italic;
 }
 
+.page-title {
+  font-size: 4em;
+  margin: 0;
+}
+
 .auth {
   width: 300px;
   background-color: rgba(81, 56, 145, 0.9);
@@ -54,6 +59,17 @@ body {
   float: right;
 }
 
+#edit-btn {
+  background-color: #A9A8D2;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Teko', sans-serif;
+  color: #4A4A4C;
+  font-size: 1em;
+  margin: 7px;
+  padding: 3px;
+}
+
 .game-card {
   border-top: 2px solid #A9A8D2;
   background-color: rgba(81, 56, 145, 0.9);
@@ -79,15 +95,13 @@ body {
 .game-date {
   margin: 0px;
   margin-top: -10px;
-}
-
-.game-lable {
-  margin: 0px;
+  color: #21173a;
 }
 
 .game-deck {
   margin: 0px;
   margin-top: -20px;
+  color: #A9A8D2;
 }
 
 .game-info {

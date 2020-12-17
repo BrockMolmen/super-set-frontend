@@ -13,7 +13,6 @@ const Profile = (props) => {
   const fetchUserData = () => {
     UserModel.show().then(userData => {
       setUserInfo(userData.user.username)
-      console.log(userData.user.username)
     })
   }
 
@@ -40,8 +39,8 @@ const Profile = (props) => {
   return (
     <div className="center-stage">
       <div>
-        <h1> HELLO {userInfo}  </h1>
-        <Link className="edit-link editUserLink" to={`/user/${userId}`}>Edit Your Info</Link>
+        <h1 className="page-title"> HELLO {userInfo}  </h1>
+        <Link id="edit-btn" to={`/user/${userId}`}>Edit Your Info</Link>
         {userGames ? mapUserGames() : "loading..."}
       </div>
     </div>

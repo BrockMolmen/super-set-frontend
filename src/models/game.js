@@ -10,7 +10,6 @@ class gameModel {
   }
 
   static create = (name, guid, userId) => {
-    console.log(name, guid, userId)
     return fetch(`${url}/all`, {
       method: "POST",
       headers: {
