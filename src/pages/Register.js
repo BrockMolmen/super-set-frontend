@@ -27,7 +27,7 @@ const Register = props => {
       UserModel.create({ username, email, password })
         .then(data => {
           console.log('Successful register', data)
-          props.history.push('/')
+          props.history.push('/login')
         })
     }
   }
