@@ -1,0 +1,124 @@
+// /* Color Theme Swatches in Hex */
+$blkpurp :#21173a;
+$drkpurp :#513891;
+$ltpurp: #A9A8D2;
+$offwhite: #CECDD2;
+$grey: #AEAAAF;
+$drkgrey: #4A4A4C;
+
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+
+
+body {
+  background-image: url(kamil-s-NPP4Z-3dJe8-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  background-color: $drkgrey;
+  font-family: 'Teko', sans-serif; 
+  font-weight: lighter;
+  color: $offwhite;
+  text-align: center;
+}
+
+
+//global
+.center-stage {
+  display: flex;
+  justify-content: space-around;
+}
+
+.snes-it{
+  font-style: italic;
+}
+
+.page-title {
+  font-size: 4em;
+  margin: 0;
+}
+
+//Login
+.auth {
+  width: 300px;
+  background-color: rgba(81, 56, 145,.9);
+  margin-top: 40px;
+  color: $offwhite;
+  border-radius: 5px;
+}
+.auth-input {
+  width: 90%;
+  color: $offwhite;
+  border-radius: 6px;
+  background-color: rgba(37, 37, 37, 0.7);
+  &:active {
+    background-color: rgba(56, 56, 56, 0.7);
+  }
+  &:hover {
+    background-color: rgba(24, 24, 24, 0.7);
+  }
+}
+
+.gbl-button { 
+  background-color: $ltpurp;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Teko', sans-serif;
+  color: $drkgrey;
+  font-size: 1em;
+  margin: 7px;
+  float: right;
+}
+
+//Profile
+#edit-btn {
+  background-color: $ltpurp;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Teko', sans-serif;
+  color: $drkgrey;
+  font-size: 1em;
+  margin: 7px;
+  padding: 3px
+}
+
+//GameCard
+.game-card{
+  border-top: 2px solid $ltpurp;
+  background-color: rgba(81, 56, 145,.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 600px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.game-img {
+  max-height: 150px;
+  max-width: 150px;
+  margin: 20px;
+}
+
+.game-name {
+  margin: 0px;
+  margin-top: 8px;
+}
+.game-date {
+  margin: 0px;
+  margin-top: -10px;
+  color: $blkpurp;
+}
+
+
+
+.game-deck {
+  margin: 0px;
+  margin-top: -20px;
+  color: $ltpurp;
+}
+
+.game-info {
+  width: 600px;
+  text-align: left;
+}

@@ -1,16 +1,30 @@
+// /* Color Theme Swatches in Hex */
+$blkpurp :#21173a;
+$drkpurp :#513891;
+$ltpurp: #A9A8D2;
+$offwhite: #CECDD2;
+$grey: #AEAAAF;
+$drkgrey: #4A4A4C;
+
+
 header {
-  background-color: slategrey;
+  width: 100vw;
+  background-color: rgba(80, 56, 143, .8);
   text-align: left;
   padding: 20px 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  font-size: 2em;
+  border-bottom: 4px solid $ltpurp ;
+  border-radius: 8px;
+
 
   a {
-    color: #fff;
+    color: #CECDD2;
     transition: color 0.3s ease;
 
     &:hover {
-      color: darken(#fff, 20%)
+      color: darken(#CECDD2, 20%)
     }
   }
 
@@ -22,6 +36,24 @@ header {
     li {
       list-style-type: none;
       padding: 0px 10px;
+    }
+  }
+  .searchbar {
+    input {
+      height: 30px;
+      width: 50vw;
+      min-width: 300px;
+      background-color: #AEAAAF;
+      border: none;
+      margin: 10px;
+      border-radius: 5px;
+    }
+    button {
+      border-radius: 5px;
+      background-color: #A9A8D2;
+      color: #fff;
+      height: 30px;
+      margin: 5px;
     }
   }
 }

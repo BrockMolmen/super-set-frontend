@@ -1,0 +1,50 @@
+header {
+  width: 100vw;
+  background-color: rgba(80, 56, 143, 0.8);
+  text-align: left;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+  border-bottom: 4px solid #A9A8D2;
+  border-radius: 8px;
+}
+
+header a {
+  color: #CECDD2;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #9997a2;
+}
+
+header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  list-style-type: none;
+  padding: 0px 10px;
+}
+
+header .searchbar input {
+  height: 30px;
+  width: 50vw;
+  min-width: 300px;
+  background-color: #AEAAAF;
+  border: none;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+header .searchbar button {
+  border-radius: 5px;
+  background-color: #A9A8D2;
+  color: #fff;
+  height: 30px;
+  margin: 5px;
+}
+/*# sourceMappingURL=Header.css.map */

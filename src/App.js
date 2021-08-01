@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Routes from './config/Routes'
-import './App.css'
+import './css/main.css'
 import UserModel from './models/user'
 
 function App() {

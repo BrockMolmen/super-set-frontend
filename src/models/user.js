@@ -1,4 +1,5 @@
 const REACT_APP_API_URL = "http://localhost:4000/api/v1"
+const userId = localStorage.getItem('id')
 
 export default class UserModel {
   static create(data) {
@@ -29,5 +30,9 @@ export default class UserModel {
       method: "DELETE",
       credentials: 'include'
     })
+  }
+
+  static show() {
+    return fetch(`${REACT_APP_API_URL}/profile/${userId}`).then(res => res.json())
   }
 }
