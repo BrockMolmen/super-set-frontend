@@ -60,5 +60,5 @@ Supportive Classmates
 - Mario Carbonell
 
 and lastly
-- Cake, for providing the soundtrack to this project
+- Cake, for providing the soundtrack for builing this project
 
